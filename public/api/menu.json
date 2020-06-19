@@ -1,0 +1,14 @@
+[
+  {
+    "url": "/",
+    "title": "Home"
+  },
+  {
+    "url": "/products",
+    "title": "Products List"
+  },
+  {
+    "url": "/test",
+    "title": "Test Page"
+  }
+]
