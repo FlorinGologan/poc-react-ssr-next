@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 
 export default class Products extends Component {
   static async getInitialProps () {
-    const res = await axios.get('http://localhost:3000/api/products.json');
+    const res = await axios.get('http://localhost:3001/api/products.json');
 
     return {products: res.data};
   }
