@@ -3,6 +3,7 @@ import Head from 'next/head';
 import axios from 'axios';
 import Layout from '../components/Layout';
 import Error from 'next/error';
+import Link from 'next/link';
 
 export default class Products extends Component {
   static async getInitialProps () {
@@ -21,7 +22,12 @@ export default class Products extends Component {
     const {products = []} = this.props;
 
     return products.map(product => (
-        <li key={ product.id }>{ product.name }</li>
+        <li key={ product.id }>
+          {/*<Link as={ `/product/${ product.id }` } href={ `/product?sku=${ product.id }` }>*/}
+          <Link href={ `/product?sku=${ product.id }` }>
+            <a>{ product.name }</a>
+          </Link>
+        </li>
       )
     );
   }
