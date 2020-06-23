@@ -19,7 +19,7 @@ class Product extends React.Component {
           <title>SSR - Product Page</title>
         </Head>
         <h1>Product Page { product.sku }</h1>
-        
+
         <Link href="/products">
           <a>Back to Products list</a>
         </Link>

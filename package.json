@@ -4,16 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 3001"
+    "dev": "nodemon server.js",
+    "build": "next build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
+    "express": "^4.17.1",
     "next": "^9.4.4",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

@@ -23,8 +23,8 @@ export default class Products extends Component {
 
     return products.map(product => (
         <li key={ product.id }>
-          {/*<Link as={ `/product/${ product.id }` } href={ `/product?sku=${ product.id }` }>*/}
-          <Link href={ `/product?sku=${ product.id }` }>
+          <Link as={ `/product/${ product.id }` } href={ `/product?sku=${ product.id }` }>
+          {/*<Link href={ `/product?sku=${ product.id }` }>*/}
             <a>{ product.name }</a>
           </Link>
         </li>
